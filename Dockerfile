@@ -1,3 +1,6 @@
 FROM thagoo/rudhra-tgbot:latest
 
-ENTRYPOINT ["python", "-m", "userbot"]
+RUN git clone https://github.com/Thagoo/PaperplaneRemix /usr/src/app/PaperplaneRemix/
+
+WORKDIR /usr/src/app/PaperplaneRemix/
+
